@@ -11,3 +11,252 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* .main{
+  margin: 0 auto;
+  max-width: 500px;
+}
+.content{
+  border: 5px #c0c0ff solid;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+table{
+  width: 100%;
+}
+td:first-child{
+  width: 100%;
+}
+td:last-child{
+  min-width: 125px;
+}
+th{
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+input,button{
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px #c0c0c0 solid;
+}
+button{
+  cursor: pointer;
+}
+button.add{
+  background-color: #0080ff;
+  color: #ffffff;
+}
+button.edit{
+  background-color: #20a0b0;
+  color: #ffffff;
+}
+button.delete{
+  background-color: #e04040;
+  color: #ffffff;
+}
+button.save{
+  background-color: #30b040;
+  color: #ffffff;
+}
+button.back{
+  background-color: #707080;
+  color: #ffffff;
+}
+.task{
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+}*/
+.item{
+  display: flex;
+  justify-content: space-between;
+  color: #c0c0c0;
+  margin-top: 4rem;
+} 
+
+.brand{
+  font-weight: bold!important;
+  font-size: 2rem!important;
+  color: #f8f9fa!important;
+  padding-top: 0!important;
+  
+}
+.myimage{
+  max-height: 350px;
+  position: absolute;
+  right: 0px;
+}
+.all{
+  background-color:  #07689F;
+  /* background-color: #AEE1E1; */
+  background-image: linear-gradient(62deg, #07689F 0%, #07689F 50%, #40A8C4 0%);
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+.welcome{
+  background: none!important;
+ padding: 0!important;
+ border: none!important;
+ line-height: 2!important;
+ color:rgba(225, 236, 238, 0.911)!important;
+ 
+}
+
+.navLink{
+  color: #f8f9fa;
+  font-weight: 500;
+  font-size: 20px;
+}
+.navLink:hover {
+  font-weight: 500;
+  font-size: 22px;
+  color: white; 
+ text-decoration: underline;
+}
+.navCss{
+  background-image: linear-gradient(62deg, #07689F 0%, #07689F 50%, #40A8C4 0%); 
+}
+.school {
+  color: #fff;
+  background: none;
+  border: none;
+}
+.school:hover {
+  color: white; 
+ text-decoration: underline;
+}
+.school>button {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+.school>button.btn.btn-primary{
+  color: #fff;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.school>button.btn.btn-primary:hover{
+  color: #fff;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.school>button:hover{
+  color: #fff;
+  background: none;
+  border: none;
+}
+/*************** section *******/
+/* .section{
+  margin-top: 3rem;
+  
+} */
+.section_row1{
+  padding-top: 2rem;
+  padding-left: 7%;
+  background-color:rgba(255, 255, 255, 0.082);
+}
+.section_row2{
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.dec{
+  font-size: 23px;
+  justify-content: center!important;
+}
+.card_group{
+  margin: 2rem 5%;
+  padding: 2rem;
+}
+.section_image{
+  transform: rotate(15deg);
+  margin-right: 1.5rem;
+  
+}
+.img_cover{
+  font-family: 'Yomogi', cursive;
+ font-weight: 100;
+}
+/***************section_row2***********************/
+
+.row2_inner2{
+  margin-top: 3rem;
+  padding-left: 20%;
+  padding-bottom: 4rem;
+  font-family: 'Yomogi', cursive;
+}
+.row2_inner1{
+  padding-top: 2rem;
+  align-content: center;
+  padding-left: 40%;
+  font-family: 'Yomogi', cursive;
+}
+.service_inner2{
+  margin-top: 2rem;
+  align-content: center;
+  padding-left: 20%;
+  margin-bottom: 2rem;
+}
+.rota_card2{
+  transform: rotate(62deg);
+}
+.rota_card{
+  transform: rotate(-8deg);
+}
+.pad_top{
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  
+}
+.section_content{
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 2;
+  font-size: 17px;
+}
+.cust_image{
+  border: none;
+  width: 80%;
+  transform: rotate(-4deg);
+}
+.service_row1{
+  margin-top: 2rem;
+}
+/****************languePage************************/
+.imageCol{
+  position: relative;
+  left: 70px;
+  top: 15px;
+}
+.langue_row{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+i{
+  margin-left: 3rem;
+}
+.color{
+  color: #07689F;
+}
+/*************footer***************/
+.footer{
+  padding-top: 2rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+   justify-content: space-around;
+  cursor: pointer;
+  color:rgba(225, 236, 238, 0.911);
+  background-image: linear-gradient(15deg, #07689F 0%, #07689F 100%, #40A8C4 0%);
+}
+.footer_inner>ul>li>a{
+  font-size: 18px;
+  font-weight: bold;
+}
