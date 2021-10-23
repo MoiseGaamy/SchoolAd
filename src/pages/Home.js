@@ -16,7 +16,7 @@ export default class Section extends Component {
                    <Container>
                 <Row >
                   <Container>
-                    <h1 className="heading-text">Pourquoi Etudier au Ghana?</h1>
+                    <h1 className="heading-text">Que faut-il Savoir?</h1>
                      <Row>
                             <Col md="6" >
                             <p className="section_content">
@@ -34,8 +34,8 @@ export default class Section extends Component {
                                 beatae veniam debitis, cumque doloremque!
                             </p>
                         </Col>  
-                        <Col md="5" >
-                          <Image className="section_image" src="images/gh.jpg" />
+                        <Col md="5" className="section_image">
+                          <Image  src="images/gh.jpg" thumbnail/>
                         </Col>
                         </Row>
                         </Container>
@@ -46,7 +46,7 @@ export default class Section extends Component {
            <section className="testimonials">
             <Carousel>
                 <Carousel.Item>
-                    <h2 class="testimonial-text">fait attention à ton arriver au Ghana car ta première expérience pourrait etre l'anarque.</h2>
+                    <h2 class="testimonial-text">à ton arriver au Ghana ta première expérience pourrait etre l'anarque.si tu crois tout connaitre</h2>
                       <em>Etudiant guineen au ghana </em>
                       <img
                         class="testimonial-image"
@@ -55,7 +55,7 @@ export default class Section extends Component {
                       />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <h2 class="testimonial-text">Avoir un projet d'étude pour le ghana c'est bien mais se préparer avant de venir est encore mieux</h2>
+                    <h2 class="testimonial-text">Etudier au Ghana c'est bien, se préparer avant de venir est mieux</h2>
                     <em>Etudiante ivoirienne au ghana</em>
                       <img
                         class="testimonial-image"
