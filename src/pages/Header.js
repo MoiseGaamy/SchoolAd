@@ -10,7 +10,7 @@ export default class Header extends Component {
         return (
         <>
          <NavBar />
-            <section className="head" style={{backgroundImage : "url(/images/text24.jpg)"}} >
+            <section className="head" style={{backgroundImage : "url(/images/text24.jpg)",backgroundRepeat:"no-repeat", maxWidth:"100%"}} >
                 <Container>
                         <Row>
                             <Col md="2"><p className="second_welcome">Bienvenue a school-ads notre objective est de vous aidez a trouver la bonne ecole selon votre budget!</p></Col>
@@ -22,7 +22,7 @@ export default class Header extends Component {
                                 Notre vision est de vous procurez de l'information possible dans la realisation de vos projets d'etudes au ghana.
                                 vous allez certainement  entendre parlez de tant d'autres chose mais sachez que la realite est differente, 
                                 veuillez bien vous informez avant d'atterir. sachez aussi bien que l'arnaque ici est a un autre niveau d'ailleurs C'est dans ce cadre que mon equipe et moi avions decides de mettre a votre disposition cette plateform,
-                                pour vous aidez a realise vos projets d'etudes au Ghana n'hesitez pas de nous posez toute vos questions,
+                                pour vous aidez a realise vos projets d'etudes au Ghana n'hesitez pas à nous posez toute vos questions,
                                 concernant les etudes au ghana. votre reussite est notre priorite Namaste.
                                 </Card.Text>
                             </Card.Body>
