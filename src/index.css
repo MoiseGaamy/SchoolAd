@@ -56,13 +56,13 @@ body{
 }
 /* heading section */
 .head{
-  padding:6% 2% 3%
+  padding:30% 2% 3%
 }
 .welcome{
   position: absolute!important;
-  bottom: 58%;
-  right: 65%;
-  width: 40%;
+  bottom: 0;
+  right: 47%;
+  width: 60%;
   line-height: 1.2;
   font-size: 19px;
   font-family: "Helvetica";
@@ -97,9 +97,9 @@ body{
 }
 .section_image{
   transform: rotate(-10deg);
-  width: 60%;
+  width: 90%;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 /* home testimonial-carousel */
 .testimonials{
@@ -169,7 +169,7 @@ body{
   font-weight: bold;
 }
 .school_carousel{
-  width: 50%;
+  width: 70%;
   margin: 20px auto;
   left: 100px!important;
 }
@@ -235,7 +235,7 @@ i{
 		position: static;
 	}
   .head{
-    padding: 30% 0 15% ;
+    padding: 30% 0 8% ;
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -246,9 +246,13 @@ i{
   font-size: 15px;
   }
   .second_welcome{
-    visibility: visible;
+    margin-bottom: 3rem;
+  font-size: 20px;
+  color:#000;
+  visibility: visible;
   }
 .heading-text{
+  margin-top: 2.5rem!important;
   font-weight: bold;
   font-family: "Helvetica";
   font-size: 22px;
@@ -266,9 +270,8 @@ i{
 }
 .section_image{
   transform: unset!important;
-  width: 80%;
-  border-radius: 100%;
-  padding: 1rem;
+  width: 100%;
+  padding-top: 4rem;
   margin-top: 1rem;
 }
 /* home testimonial-carousel */
@@ -302,12 +305,13 @@ font-family: "Montserrat";
 /* cta section and school_carousel*/
 .cta .heading-text {
   font-size: 1.2rem;
+  width: 100%;
 }
-.school_carousel .carousel{
-  position: static!important;
-  margin: 20px auto!important;
-  width: 70%!important;
-  left: 80px!important;
+.school_carousel{
+    position: static!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+
 }
 .school_carousel_Caption{
   position: static!important;
@@ -328,5 +332,6 @@ font-family: "Montserrat";
 }
 
 }
+
 
 
