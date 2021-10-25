@@ -10,11 +10,19 @@ export default class Header extends Component {
         return (
         <>
          <NavBar />
-            <section className="head" style={{backgroundImage : "url(/images/text24.jpg)",backgroundRepeat:"no-repeat", maxWidth:"100%"}} >
+            <section className="head" style={{backgroundImage : "url(/images/text24.jpg)",backgroundRepeat:"no-repeat", maxWidth:"100%",maxHeight:"75%"}} >
                 <Container>
                         <Row>
-                            <Col md="2"><p className="second_welcome">Bienvenue a school-ads notre objective est de vous aidez a trouver la bonne ecole selon votre budget!</p></Col>
-                            <Col lg="12" md="8">
+                            <Col md="12" >
+                            <Card className="second_welcome">
+                            <Card.Body>
+                                <Card.Text>
+                                Bienvenue a school-ads notre objective est de vous aidez a trouver la bonne ecole selon votre budget!
+                                </Card.Text>
+                            </Card.Body>
+                            </Card>
+                            </Col>
+                            <Col lg="8" >
                             <Card className="welcome">
                             <Card.Body>
                                 <Card.Title>Welcome!</Card.Title>
@@ -28,7 +36,6 @@ export default class Header extends Component {
                             </Card.Body>
                             </Card>
                             </Col>
-                            <Col md="2"></Col>
                         </Row>             
                 </Container>
             </section>
