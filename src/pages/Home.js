@@ -18,7 +18,7 @@ export default class Section extends Component {
                   <Container>
                     <h1 className="heading-text">Que faut-il Savoir?</h1>
                      <Row>
-                            <Col md="6" >
+                            <Col lg="6" md="6" >
                             <p className="section_content">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                 Itaque architecto necessitatibus, obcaecati facilis illo in
@@ -34,8 +34,8 @@ export default class Section extends Component {
                                 beatae veniam debitis, cumque doloremque!
                             </p>
                         </Col>  
-                        <Col md="5" className="section_image">
-                          <Image  src="images/gh.jpg" thumbnail/>
+                        <Col lg="6" md="6">
+                          <Image  className="section_image" src="images/gh.jpg"/>
                         </Col>
                         </Row>
                         </Container>
@@ -44,26 +44,32 @@ export default class Section extends Component {
             </section>
                 {/* testimonials section */}
            <section className="testimonials">
-            <Carousel>
-                <Carousel.Item>
-                    <h2 class="testimonial-text">à ton arriver au Ghana ta première expérience pourrait etre l'anarque.si tu crois tout connaitre</h2>
-                      <em>Etudiant guineen au ghana </em>
-                      <img
-                        class="testimonial-image"
-                        src="images/rochelle.jpg"
-                        alt="lady-profile" 
-                      />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <h2 class="testimonial-text">Etudier au Ghana c'est bien, se préparer avant de venir est mieux</h2>
-                    <em>Etudiante ivoirienne au ghana</em>
-                      <img
-                        class="testimonial-image"
-                        src="images/cover.jpg"
-                        alt="lady-img"
-                      />
+              <Container>
+                <Row>
+                  <Col lg="12" md="12">
+                <Carousel>
+                    <Carousel.Item>
+                        <h2 class="testimonial-text">à ton arriver au Ghana ta première expérience pourrait etre l'anarque.si tu crois tout connaitre</h2>
+                          <em>Etudiant guineen au ghana </em>
+                          <img
+                            class="testimonial-image"
+                            src="images/rochelle.jpg"
+                            alt="lady-profile" 
+                          />
                     </Carousel.Item>
-                </Carousel>
+                    <Carousel.Item>
+                        <h2 class="testimonial-text">Etudier au Ghana c'est bien, se préparer avant de venir est mieux</h2>
+                        <em>Etudiante ivoirienne au ghana</em>
+                          <img
+                            class="testimonial-image"
+                            src="images/cover.jpg"
+                            alt="lady-img"
+                          />
+                        </Carousel.Item>
+                    </Carousel>
+                    </Col>
+                </Row>
+              </Container>
            </section>
             {/* Features section */}
          <section className="features" >
@@ -96,26 +102,28 @@ export default class Section extends Component {
 
             </section>
             {/* Pricing section */}
-          <section className="pricing">
-            <h2 className="heading-devise">La devise pour ton projet d'étude</h2>
+            <section className="pricing">
+              <Container>
+                <Row>
+                <h2 className="heading-devise">La devise pour ton projet d'étude</h2>
                 <p className="devise-text">la devise depends de chaque école de ton choix.Du coup c'est juste une estimation</p>
-                    <div class="row">    
-                        <div class=" pricing-col col-lg-4 col-md-6">
-                          <div class="card">
-                            <div class="card-header">
+                      <Col lg="4" md="6" className="pricing-col">
+                          <div className="card">
+                            <div className="card-header">
                               <h3>Devise de 3 mois</h3>
                             </div>
-                            <div class="card-body">
+                            <div className="card-body">
                               <h2>Free</h2>
                                   <p>5 Matches Per Day</p>
                                   <p>10 Messages Per Day</p>
                                   <p>Unlimited App Usage</p>
-                                  <button class="btn btn-lg btn-block btn-dark" type="button">3000$</button>
+                                  <button className="btn btn-lg btn-block btn-dark" type="button">3000$</button>
                             </div>
                          </div>
-                      </div>
+                       </Col>
+                      
                         
-                        <div class=" pricing-col col-lg-4 col-md-6">
+                        <Col lg="4" md="6" className="pricing-col">
                           <div class="card">
                             <div class="card-header">
                               <h3>Devise de 6 mois</h3>
@@ -128,27 +136,31 @@ export default class Section extends Component {
                              <button class="btn btn-lg btn-block btn-dark" type="button">6000$</button>
                            </div>
                          </div>
-                      </div>
+                      </Col>
                         
-                        <div class="pricing-col col-lg-4">
+                      <Col lg="4" className="pricing-col">
                             <div class="card">
-                          <div class="card-header">
-                            <h3>Devise de 12 mois</h3>
-                          </div>
-                          <div class="card-body">
-                            <h2>$99 / mo</h2>
-                              <p>Pirority Listing</p>
-                              <p>Unlimited Matches</p>
-                              <p>Unlimited Messages</p>
-                              <button class="btn btn-lg btn-block btn-dark" type="button">10000$</button>
-                          </div>
-                       </div>
-                    </div>
-                  </div>     
+                              <div class="card-header">
+                                <h3>Devise de 12 mois</h3>
+                              </div>
+                               <div class="card-body">
+                                <h2>$99 / mo</h2>
+                                 <p>Pirority Listing</p>
+                                 <p>Unlimited Matches</p>
+                                 <p>Unlimited Messages</p>
+                                 <button class="btn btn-lg btn-block btn-dark" type="button">10000$</button>
+                              </div>
+                         </div>
+                      </Col>
+                  </Row>
+                </Container>    
             </section>
             {/* Cta section */}
             <section className="cta">
+              <Container>
+                <Row>
                 <h3 className="heading-text">Trouve toi la bonne école selon ton budget.</h3>
+                <Col lg="12" md="12">
                 <Carousel  className="school_carousel">
                     <Carousel.Item className="school_carousel_Item">
                       <img
@@ -186,6 +198,9 @@ export default class Section extends Component {
                       </Carousel.Caption>
                     </Carousel.Item>
               </Carousel>
+              </Col>
+              </Row>
+            </Container>
             </section>
                  
         </>
