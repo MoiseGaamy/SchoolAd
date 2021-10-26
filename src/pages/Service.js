@@ -6,10 +6,10 @@ import { Row, Col, Alert, Button, Image, Card } from 'react-bootstrap';
 export default class Service extends Component {
     render() {
         return (
-            <div>
+            <div className="service">
                 <NavBar />
                 <Row className="service_row1">
-                    <Col md={6}>
+                    <Col lg="6" md="6">
                     <>
                         <Alert >
                             <Alert.Heading>How's it going?!</Alert.Heading>
@@ -30,17 +30,12 @@ export default class Service extends Component {
                             </Button>
                             </div>
                         </Alert>
-                    </>
-                </Col>
-                    <Col md={6} >
-                       <Image src="images/ccs.jpg" className="cust_image"/> 
+                        </>
+                        <Image src="images/ccs.jpg" className="cust_image" thumbnail/> 
                     </Col>
-                </Row>
-                <Row className="section_row2"> 
+                    <Col lg="4" md="4">
                     <h1 className="row2_inner1">SERVICE</h1>
-                  <Row className="service_inner2">
-                    <Col>
-                    <Card style={{ width: '18rem' }} >
+                    <Card >
                         <Card.Body>
                             <Card.Title><i class="fas color fa-truck-pickup fa-5x"></i></Card.Title>
                             <Card.Text>
@@ -51,8 +46,8 @@ export default class Service extends Component {
                         </Card.Body>
                         </Card>
                     </Col>
-                    <Col>
-                    <Card style={{ width: '18rem' }}>
+                    <Col lg="4" md="4">
+                    <Card >
                         <Card.Body>
                             <Card.Title><i class="fas color fa-home fa-5x"></i></Card.Title>
                             <Card.Text>
@@ -63,8 +58,8 @@ export default class Service extends Component {
                         </Card.Body>
                         </Card>
                     </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
+                    <Col lg="4" md="4">
+                        <Card>
                         <Card.Body>
                             <Card.Title><i class="far color fa-building fa-5x"></i></Card.Title>
                             <Card.Text>
@@ -75,7 +70,6 @@ export default class Service extends Component {
                         </Card.Body>
                         </Card>
                         </Col>
-                     </Row>
                 </Row>
             </div>
         )
