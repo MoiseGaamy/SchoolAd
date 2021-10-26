@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 export default class Blog extends Component {
     render() {
         return (
-            <div>
+            <div className="blog">
                 <NavBar />
                 <Container>
                     <Row>
