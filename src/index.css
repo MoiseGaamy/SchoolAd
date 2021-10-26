@@ -6,8 +6,11 @@ body{
 .mynav{
   margin-bottom: 3rem;
 }
-.nav-item{
-  padding: 0.5rem;
+.mynavBar{
+    padding: .4rem 1rem;
+}
+.myResponsiveNav{
+  justify-content: end;
 }
 .navLink{
   color: #fff;
@@ -25,34 +28,6 @@ body{
   padding-top: 0!important;
 	margin-left: 1rem;
   color: #000;
-}
-/* dropdown section */
-.dropdown{
-	display: inline-block;
-	position: relative;
-}
-.dropdown-content{
-	display: none;
-	position: absolute;
-	min-width: 10rem;
-	padding: 1rem 1.5rem;
-	z-index: 2;
-	background-color: #d3d3d3;
-	margin: 0;
-	margin-top: 0.4rem;
-	border-radius: 0.5rem;
-}
-.dropdown-link{
-	color: #000;
-}
-.dropdown-link:hover{
-  background: #fff;
-	text-decoration: none;
-	color: #000;
-}
-.dropdown:hover .dropdown-content{
- display: flex;
- flex-direction: column;
 }
 /* heading section */
 .head{
@@ -200,10 +175,13 @@ body{
 .service_row1{
   margin-top: 2rem;
 }
+/************** Blog******/
+.blog,.univ, .service, .lang, .info{
+  margin-top: 5rem;
+}
 /****************languePage************************/
 .imageCol{
   position: relative;
-  left: 70px;
   top: 15px;
 }
 .langue_row{
