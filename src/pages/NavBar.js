@@ -5,27 +5,27 @@ import { Container, Nav, Navbar , NavDropdown} from 'react-bootstrap';
 
 export default function NavBar() {
     return (
-        <div className="mynav">
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+        <>
+            <Navbar collapseOnSelect className="mynavBar" expand="lg" bg="dark" variant="dark" fixed="top">
                 <Container>
-                <Navbar.Brand className="brand" href="#home">School-Ads</Navbar.Brand>
+                <Navbar.Brand className="brand" href="/">School-Ads</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse className="myResponsiveNav" id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link  className="navLink"href="#features">Home</Nav.Link>
-                    <Nav.Link  className="navLink"href="#pricing">Blog</Nav.Link>
+                    <Nav.Link  className="navLink"href="/">Home</Nav.Link>
+                    <Nav.Link  className="navLink"href="/Blog">Blog</Nav.Link>
                     <NavDropdown title="Schools" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Ecole de l'angue</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Informatique</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Université</NavDropdown.Item>
+                        <NavDropdown.Item href="/Lang">Ecole de l'angue</NavDropdown.Item>
+                        <NavDropdown.Item href="/info">Informatique</NavDropdown.Item>
+                        <NavDropdown.Item href="/Univ">Université</NavDropdown.Item>
                         <NavDropdown.Divider />
                     </NavDropdown>
-                    <Nav.Link className="navLink" href="#pricing">Services</Nav.Link>
-                    <Nav.Link className="navLink" href="#pricing">Contact</Nav.Link>
+                    <Nav.Link className="navLink" href="/Service">Services</Nav.Link>
+                    <Nav.Link className="navLink" href="/Contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 </Container>
                 </Navbar>
-        </div>
+        </>
     )
 }
